@@ -34,9 +34,11 @@ nav {
     justify-content: space-between;
     padding-top: 3rem;
 }
-#bar{
+
+#bar {
     display: none;
 }
+
 .nav-ul {
     display: flex;
 }
@@ -118,7 +120,7 @@ nav h1 {
 /* header section ends hear */
 
 /* sponsor section start hear */
-.sponsor{
+.sponsor {
     display: flex;
     width: 80%;
     margin: 0 auto;
@@ -127,36 +129,132 @@ nav h1 {
     margin-top: 69px;
     margin-bottom: 100px;
 }
+
 /* sponsor section ends hear */
+
+/* Popular Collection section start hear */
+.collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.collection-header {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.card {
+    width: 329px;
+    height: 476px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    color: rgb(24, 25, 31);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.dolor {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+.star i {
+    color: rgb(251, 130, 0);
+}
+
+.text {
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    text-align: left;
+}
+.more{
+    display: flex;
+    align-self: flex-end;
+    margin-top: 50px;
+}
+.more a{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+}
+.more i{
+padding-left: 8px;
+}
+/* Popular Collection section ends hear */
 
 
 /* responsive mobile device */
 @media screen and (max-width: 480px) {
-    body{
+    body {
         width: 100%;
     }
-    .none{
+
+    .none {
         display: none;
     }
+
     .header {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .header-text{
+
+    .header-text {
         align-items: center;
         justify-content: center;
         width: 100%;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 30px;
         text-align: center;
     }
-    .header-text p{
+
+    .header-text p {
         text-align: center;
     }
-    #bar{
+
+    #bar {
         display: block;
     }
 
@@ -167,19 +265,27 @@ nav h1 {
     .text {
         display: none;
     }
-    .header{
+
+    .header {
         width: 100%;
     }
-    .header-img img{
+
+    .header-img img {
         width: 100%;
     }
-    #img2{
+
+    #img2 {
         margin-top: -350px;
     }
-    .sponsor{
+
+    .sponsor {
         width: 90%;
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
     }
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }
