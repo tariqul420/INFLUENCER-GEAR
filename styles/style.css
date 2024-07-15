@@ -118,7 +118,15 @@ nav h1 {
 /* header section ends hear */
 
 /* sponsor section start hear */
-
+.sponsor{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 69px;
+    margin-bottom: 100px;
+}
 /* sponsor section ends hear */
 
 
@@ -167,5 +175,11 @@ nav h1 {
     }
     #img2{
         margin-top: -350px;
+    }
+    .sponsor{
+        width: 90%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
